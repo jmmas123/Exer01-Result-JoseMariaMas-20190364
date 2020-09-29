@@ -1,0 +1,18 @@
+#creando lista vacia
+ListaRegistro = []
+#variable contadora
+Clientes = 0
+#limite de clientes
+CapMax = int(input("Porfavor, ingrese la cantidad de clientes que desea recibir ahora:"))
+#boocle condicional
+while Clientes <= CapMax: 
+    cliente = input("Porfavor, ingrese nombre del cliente: ")
+    producto = input("productos:")
+    costo = float(input("costo($0.00):"))
+
+    Registro = dict(cliente=cliente, producto=producto, costo=costo)
+    ListaRegistro.append(Registro)
+    Clientes = Clientes+1
+
+    for Registro in ListaRegistro:
+        print(Registro)
